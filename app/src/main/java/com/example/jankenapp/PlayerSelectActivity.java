@@ -23,28 +23,29 @@ public class PlayerSelectActivity extends AppCompatActivity {
         boy_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onSelectCharacter(boy_button.toString());
+
+                onSelectCharacter(view);
             }
         });
 
         girl_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onSelectCharacter(girl_button.toString());
+                onSelectCharacter(view);
             }
         });
 
-        girl_button.setOnClickListener(new View.OnClickListener() {
+        man_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onSelectCharacter(man_button.toString());
+                onSelectCharacter(view);
             }
         });
     }
 
-    private void onSelectCharacter(String id){
+    private void onSelectCharacter(View view){
         Intent intent = new Intent(this, JankenActivity.class);
-        intent.putExtra("selectedCharacter", id);
+        intent.putExtra("CHAR_ID", view.getId());
 
         startActivity(intent);
     }
