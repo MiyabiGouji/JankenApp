@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">JankenApp</string>
+    <string name="start_text">はじめる</string>
+    <string name="janken_text">じゃんけんPON!</string>
+    <string name="select_text">対戦相手を選択してください</string>
+    <string name="boy_text">シャイボーイ</string>
+    <string name="girl_text">負けず嫌い</string>
+    <string name="man_text">優しい</string>
+    <string name="janken_button">勝負！</string>
+    <string name="select_arm_text">手を選んでください</string>
+</resources>
